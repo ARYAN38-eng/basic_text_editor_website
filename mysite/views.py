@@ -40,7 +40,7 @@ def analyze(request):
         purpose.append("Converted to Uppercase")
     
     if newlineremover == "on":
-        analyzed = analyzed.replace("\n", "").replace("\r", "")
+        analyzed = analyzed.replace("\n", " ").replace("\r", " ")
         purpose.append("Removed Newlines")
     
     if extraspaceremover == "on":
